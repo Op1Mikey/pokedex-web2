@@ -75,3 +75,51 @@
   font-size: 0.9rem;
   margin-bottom: 16px;
 }
+
+body {
+  background: #1a1a2e;
+  margin: 0;
+}
+
+.App h1 {
+  color: #ee2d2d;
+  text-shadow: 2px 2px 0 #333;
+}
+
+
+/* Couleurs approximatives par type de pokemon */
+.type-normal      {background: #a8a878;}
+.type-fire        {background: #f08030;}
+.type-water       {background: #6890f0;}
+.type-grass       {background: #78c850;}
+.type-electric    {background: #f8d030; color: #333;}
+.type-ice         {background: #98d8d8; color: #333;}
+.type-fighting    {background: #c03028;}
+.type-poison      {background: #a040a0;}
+.type-ground      {background: #e0c068; color: #333; }
+.type-flying      {background: #a890f0;}
+.type-psychic     {background: #f85888;}
+.type-bug         {background: #a8b820;}
+.type-rock        {background: #b8a038;}
+.type-ghost       {background: #705898;}
+.type-dragon      {background: #7038f8;}
+.type-dark        {background: #705848;}
+.type-steel       {background: #b8b8d0; color: #333;}
+.type-fairy       {background: #ee99ac; color: #333; }
+
+@media (max-width: 480px) {
+  .pokemon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .pokemon-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
